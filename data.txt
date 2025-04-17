@@ -1,2 +1,29 @@
 gh repo create your-repo-name --public --source=. --remote=origin --push
+winget install GitHub.cli
+gh --version
 
+gh version 2.x.x
+gh auth login
+gh repo create your-repo-name --public --source=. --remote=origin --push
+
+Command Breakdown:
+gh:
+The GitHub CLI command — lets you interact with GitHub from your terminal.
+
+repo create your-repo-name:
+This tells GitHub CLI to create a new repository on GitHub with the name your-repo-name.
+
+--public:
+Makes the repo public.
+(You can use --private if you don’t want it to be publicly visible.)
+
+--source=.:
+Tells it to use the current directory (.) as the source for the repository.
+It will create the repo based on the files in your local folder.
+
+--remote=origin:
+Sets the remote GitHub repo's name to origin (which is the default remote name Git uses).
+This links your local repo to the one on GitHub.
+
+--push:
+Pushes (uploads) your local files to the new GitHub repo after creating it.
